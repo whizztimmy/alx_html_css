@@ -1,7 +1,10 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: #C4B0DB;
+    background-color: rgb(140, 150, 152);
+}
+* {
+    box-sizing: border-box;
 }
 main {
     display: flex;
@@ -9,17 +12,80 @@ main {
     flex: auto;
 }
 article {
-    flex: 2;
-    overflow-y: auto
+    overflow: auto;
+    float: left;
+    width: 66.6%;
+    padding: 8px;
+
 }
 aside {
-    flex: 1;
-    overflow-y: auto
+    float: right;
+    width: 33.3%;
+    background-color: antiquewhite;
+    text-align: center;
+   padding-bottom: 100px;
+   border-radius: 10px;
 }
+
+/* nav styling */
+
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+}
+
+/* Main */
+
+main {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: beige;
+}
+
+/* section */
+.content {
+    overflow: auto;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+  }
+
 .tbl {
     border: 2px solid black;
+    border-collapse: collapse;
 }
 .logo {
-    width: 50px;
-    height: 50px;
+  font-size: 13px;
+  display: block;
+  text-align: center;
+  color:aliceblue;
 }
+th {
+    order: 2px solid black;
+    border-collapse: collapse;
+}
+
+/* footer */
+ footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: aliceblue;
+ }
