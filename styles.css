@@ -6,11 +6,6 @@ body {
 * {
     box-sizing: border-box;
 }
-main {
-    display: flex;
-    flex-direction: row;
-    flex: auto;
-}
 article {
     overflow: auto;
     float: left;
@@ -88,4 +83,25 @@ th {
     text-align: center;
     background-color: #333;
     color: aliceblue;
+    clear: both;
  }
+ /* viewport styling */
+
+body.works_on_smartphone {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    body.works_on_smartphone {
+        padding: 10px;
+    }
+    header h1 {
+        font-size: 18px;
+    }
+    main p {
+        font-size: 14px;
+    }
+}
